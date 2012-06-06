@@ -33,6 +33,9 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
           <a href="chemphys_theory.html" title="7. Chemical Physics – Theoretical Background"
              accesskey="N">next</a> |</li>
         <li class="right" >
@@ -160,17 +163,17 @@ can be loaded into TAMkin to perform a normal mode analysis and thermochemistry
 computations. Detailed instructions per package are listed below.</p>
 <div class="section" id="id1">
 <h2>6.1. CHARMM<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p>For the details, see <tt class="xref docutils literal"><span class="pre">tamkin.io.charmm</span></tt>.</p>
+<p>For the details, see <a title="" class="reference external" href="../reference/io.html#module-tamkin.io.charmm"><tt class="xref docutils literal"><span class="pre">tamkin.io.charmm</span></tt></a>.</p>
 <p><strong>TODO</strong></p>
 </div>
 <div class="section" id="id2">
 <h2>6.2. CP2K<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>For the details, see <tt class="xref docutils literal"><span class="pre">tamkin.io.cp2k</span></tt>.</p>
+<p>For the details, see <a title="" class="reference external" href="../reference/io.html#module-tamkin.io.cp2k"><tt class="xref docutils literal"><span class="pre">tamkin.io.cp2k</span></tt></a>.</p>
 <p><strong>TODO</strong></p>
 </div>
 <div class="section" id="id3">
 <h2>6.3. CPMD<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>For the details, see <tt class="xref docutils literal"><span class="pre">tamkin.io.cpmd</span></tt>.</p>
+<p>For the details, see <a title="" class="reference external" href="../reference/io.html#module-tamkin.io.cpmd"><tt class="xref docutils literal"><span class="pre">tamkin.io.cpmd</span></tt></a>.</p>
 <p><strong>TODO</strong></p>
 </div>
 <div class="section" id="id4">
@@ -180,7 +183,7 @@ computations. Detailed instructions per package are listed below.</p>
 </div>
 <div class="section" id="gaussian-98">
 <h2>6.5. Gaussian 98<a class="headerlink" href="#gaussian-98" title="Permalink to this headline">¶</a></h2>
-<p>For the details, see <tt class="xref docutils literal"><span class="pre">tamkin.io.gaussian.load_molecule_g98fchk()</span></tt>.</p>
+<p>For the details, see <a title="tamkin.io.gaussian.load_molecule_g98fchk" class="reference external" href="../reference/io.html#tamkin.io.gaussian.load_molecule_g98fchk"><tt class="xref docutils literal"><span class="pre">tamkin.io.gaussian.load_molecule_g98fchk()</span></tt></a>.</p>
 <p>Given a formatted checkpoint file, it is loaded as follows:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">molecule</span> <span class="o">=</span> <span class="n">load_molecule_g98fchk</span><span class="p">(</span><span class="s">&quot;freq.fchk&quot;</span><span class="p">)</span>
 </pre></div>
@@ -211,7 +214,7 @@ masses with the IUPAC 2005 values, use the following snippet:</p>
 </div>
 <div class="section" id="gaussian-03-09">
 <h2>6.6. Gaussian 03/09<a class="headerlink" href="#gaussian-03-09" title="Permalink to this headline">¶</a></h2>
-<p>For the details, see <tt class="xref docutils literal"><span class="pre">tamkin.io.gaussian.load_molecule_g03fchk()</span></tt>.</p>
+<p>For the details, see <a title="tamkin.io.gaussian.load_molecule_g03fchk" class="reference external" href="../reference/io.html#tamkin.io.gaussian.load_molecule_g03fchk"><tt class="xref docutils literal"><span class="pre">tamkin.io.gaussian.load_molecule_g03fchk()</span></tt></a>.</p>
 <p><cite>Note</cite>: Formatted checkpoint files of Gaussian03 and Gaussian09 can both be
 read with <tt class="docutils literal"><span class="pre">load_molecule_g03fchk</span></tt></p>
 <p>Given a formatted checkpoint file, it is loaded as follows:</p>
@@ -231,7 +234,7 @@ internal units, i.e. Hartree):</p>
 </div>
 <div class="section" id="torsional-potentials">
 <h3>6.6.1. Torsional potentials<a class="headerlink" href="#torsional-potentials" title="Permalink to this headline">¶</a></h3>
-<p>For the details, see <tt class="xref docutils literal"><span class="pre">tamkin.io.gaussian.load_rotscan_g03log()</span></tt>.</p>
+<p>For the details, see <a title="tamkin.io.gaussian.load_rotscan_g03log" class="reference external" href="../reference/io.html#tamkin.io.gaussian.load_rotscan_g03log"><tt class="xref docutils literal"><span class="pre">tamkin.io.gaussian.load_rotscan_g03log()</span></tt></a>.</p>
 <p>For the treatment of hindered internal rotors one must load the torsional
 potential data from a relaxed potential energy surface scan.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">load_rotscan_g03log</span><span class="p">(</span><span class="s">&quot;scan.log&quot;</span><span class="p">)</span>
@@ -251,17 +254,17 @@ one may manually specify the atom indexes of the rotor <cite>top</cite>:</p>
 </div>
 <div class="section" id="id5">
 <h2>6.7. Q-Chem<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<p>For the details, see <tt class="xref docutils literal"><span class="pre">tamkin.io.qchem</span></tt>.</p>
+<p>For the details, see <a title="" class="reference external" href="../reference/io.html#module-tamkin.io.qchem"><tt class="xref docutils literal"><span class="pre">tamkin.io.qchem</span></tt></a>.</p>
 <p><strong>TODO</strong></p>
 </div>
 <div class="section" id="id6">
 <h2>6.8. Q-Chem/CHARMM (QM/MM)<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
-<p>For the details, see <tt class="xref docutils literal"><span class="pre">tamkin.io.qchem</span></tt>.</p>
+<p>For the details, see <a title="" class="reference external" href="../reference/io.html#module-tamkin.io.qchem"><tt class="xref docutils literal"><span class="pre">tamkin.io.qchem</span></tt></a>.</p>
 <p><strong>TODO</strong></p>
 </div>
 <div class="section" id="id7">
 <h2>6.9. VASP<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
-<p>For the details, see <tt class="xref docutils literal"><span class="pre">tamkin.io.vasp</span></tt>.</p>
+<p>For the details, see <a title="" class="reference external" href="../reference/io.html#module-tamkin.io.vasp"><tt class="xref docutils literal"><span class="pre">tamkin.io.vasp</span></tt></a>.</p>
 <p><strong>TODO</strong></p>
 </div>
 </div>
@@ -336,6 +339,9 @@ one may manually specify the atom indexes of the rotor <cite>top</cite>:</p>
         <li class="right" style="margin-right: 10px">
           <a href="../genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
         <li class="right" >
           <a href="chemphys_theory.html" title="7. Chemical Physics – Theoretical Background"
              >next</a> |</li>

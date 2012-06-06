@@ -33,6 +33,9 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
           <a href="chemphys_examples.html" title="9. Chemical Physics – Basic TAMkin recipes"
              accesskey="N">next</a> |</li>
         <li class="right" >
@@ -86,7 +89,7 @@ computation on the optimized geometry of the molecule of interest.</p>
 <p>The following options can be used to specify the details, but the standard
 values for these options are suitable for most applications.</p>
 <ul>
-<li><p class="first"><strong>Options for ConstrainExt</strong>. See <tt class="xref docutils literal"><span class="pre">tamkin.nma.ConstrainExt</span></tt> for the
+<li><p class="first"><strong>Options for ConstrainExt</strong>. See <a title="tamkin.nma.ConstrainExt" class="reference external" href="../reference/nma.html#tamkin.nma.ConstrainExt"><tt class="xref docutils literal"><span class="pre">tamkin.nma.ConstrainExt</span></tt></a> for the
 details. The <tt class="docutils literal"><span class="pre">ConstrainExt()</span></tt> object specifies that the normal mode analysis
 must be performed in 3N-6 (or 3N-5) internal coordinates. This is the default
 procedure in most programs.</p>
@@ -117,7 +120,7 @@ options, they must be separated by a comma:</p>
 </pre></div>
 </div>
 </li>
-<li><p class="first"><strong>Full instead of ConstrainExt</strong>. See <tt class="xref docutils literal"><span class="pre">tamkin.nma.Full</span></tt> for the
+<li><p class="first"><strong>Full instead of ConstrainExt</strong>. See <a title="tamkin.nma.Full" class="reference external" href="../reference/nma.html#tamkin.nma.Full"><tt class="xref docutils literal"><span class="pre">tamkin.nma.Full</span></tt></a> for the
 details. Instead of constraining the external degrees of freedom, one may
 also perform the normal mode analysis in 3N coordinates and hope that the
 Hessian is accurate enough to produce 6 zero frequencies. They will be
@@ -131,7 +134,7 @@ treatment. One can relax the linearity check as follows:</p>
 </div>
 <p>There are no other options for the full treatment.</p>
 </li>
-<li><p class="first"><strong>Arguments for the PartFun object</strong>. See <tt class="xref docutils literal"><span class="pre">tamkin.partf.PartFun</span></tt> for
+<li><p class="first"><strong>Arguments for the PartFun object</strong>. See <a title="tamkin.partf.PartFun" class="reference external" href="../reference/pf.html#tamkin.partf.PartFun"><tt class="xref docutils literal"><span class="pre">tamkin.partf.PartFun</span></tt></a> for
 the details. The partition function object is merely a definition of the
 partition function. It can be used to compute the numerical value of the
 partition function (and many other properties) at a given temperature and
@@ -143,7 +146,7 @@ vibrational and the electronic contribution. Additional contributions are
 given in a list (square brackets). For gas phase molecules, one typically adds
 the <tt class="docutils literal"><span class="pre">ExtTrans</span></tt> and <tt class="docutils literal"><span class="pre">ExtRot</span></tt> contributions.</p>
 </li>
-<li><p class="first"><strong>Options for ExtTrans</strong>. See <tt class="xref docutils literal"><span class="pre">tamkin.partf.ExtTrans</span></tt> for the details.
+<li><p class="first"><strong>Options for ExtTrans</strong>. See <a title="tamkin.partf.ExtTrans" class="reference external" href="../reference/pf.html#tamkin.partf.ExtTrans"><tt class="xref docutils literal"><span class="pre">tamkin.partf.ExtTrans</span></tt></a> for the details.
 The <tt class="docutils literal"><span class="pre">ExtTrans</span></tt> class defines the translational contribution to the partition
 function. For practical reasons, this contribution also includes the many
 body effects of the partition function of the classical (ideal) gas, and the
@@ -182,7 +185,7 @@ This is not relevant for molecules in the gas phase.</p>
 </dd>
 </dl>
 </li>
-<li><p class="first"><strong>Options for ExtRot</strong>. See <tt class="xref docutils literal"><span class="pre">tamkin.partf.ExtRot</span></tt> for the details.</p>
+<li><p class="first"><strong>Options for ExtRot</strong>. See <a title="tamkin.partf.ExtRot" class="reference external" href="../reference/pf.html#tamkin.partf.ExtRot"><tt class="xref docutils literal"><span class="pre">tamkin.partf.ExtRot</span></tt></a> for the details.</p>
 <dl class="docutils">
 <dt><tt class="docutils literal"><span class="pre">symmetry_number</span></tt> (default <tt class="docutils literal"><span class="pre">symmetry_number=None</span></tt>).</dt>
 <dd><p class="first last">When the symmetry number is not given, it is computed from the molecular
@@ -197,7 +200,7 @@ linear. The value 1.0 is in internal (atomic) units.</p>
 </dd>
 </dl>
 </li>
-<li><p class="first"><strong>Options for Vibrations</strong>. See <tt class="xref docutils literal"><span class="pre">tamkin.partf.Vibrations</span></tt> for the
+<li><p class="first"><strong>Options for Vibrations</strong>. See <a title="tamkin.partf.Vibrations" class="reference external" href="../reference/pf.html#tamkin.partf.Vibrations"><tt class="xref docutils literal"><span class="pre">tamkin.partf.Vibrations</span></tt></a> for the
 details. One does not have to add a <tt class="docutils literal"><span class="pre">Vibrations</span></tt> object to the list of
 contributions in the partition function, unless one wants to modify the
 options of the vibrational contribution.</p>
@@ -431,11 +434,11 @@ computes the translational contribution to the free energy as follows:</p>
 </pre></div>
 </div>
 <p>A complete overview of internals can be found in the reference documentation
-of the <tt class="xref docutils literal"><span class="pre">tamkin.partf</span></tt> module, or by reading the source code.</p>
+of the <a title="" class="reference external" href="../reference/pf.html#module-tamkin.partf"><tt class="xref docutils literal"><span class="pre">tamkin.partf</span></tt></a> module, or by reading the source code.</p>
 </div>
 <div class="section" id="generating-tables">
 <h4>8.1.3.3. Generating tables<a class="headerlink" href="#generating-tables" title="Permalink to this headline">¶</a></h4>
-<p>See <tt class="xref docutils literal"><span class="pre">tamkin.pftools.ThermoAnalysis</span></tt> for the details.</p>
+<p>See <a title="tamkin.pftools.ThermoAnalysis" class="reference external" href="../reference/pf.html#tamkin.pftools.ThermoAnalysis"><tt class="xref docutils literal"><span class="pre">tamkin.pftools.ThermoAnalysis</span></tt></a> for the details.</p>
 <p>Tables of thermodynamic quantities can be computed for given temperatures and
 sorting out all contributions from the components of the partition function to
 each quantity. The example below generates a CSV file that can be loaded into
@@ -511,7 +514,7 @@ the <tt class="docutils literal"><span class="pre">PartFun</span></tt> methods a
 </div>
 <div class="section" id="thermodynamic-equilibrium">
 <h2>8.2. Thermodynamic equilibrium<a class="headerlink" href="#thermodynamic-equilibrium" title="Permalink to this headline">¶</a></h2>
-<p>See <tt class="xref docutils literal"><span class="pre">tamkin.chemmod.ThermodynamicModel</span></tt> for the details.</p>
+<p>See <a title="tamkin.chemmod.ThermodynamicModel" class="reference external" href="../reference/pf.html#tamkin.chemmod.ThermodynamicModel"><tt class="xref docutils literal"><span class="pre">tamkin.chemmod.ThermodynamicModel</span></tt></a> for the details.</p>
 <p>Given a list of partition functions of reactants (<tt class="docutils literal"><span class="pre">pfs_react</span></tt>) and a list of
 product partition functions (<tt class="docutils literal"><span class="pre">pfs_prod</span></tt>), one can construct a
 <tt class="docutils literal"><span class="pre">ThermodynamicModel</span></tt> object.</p>
@@ -569,7 +572,7 @@ the partition functions, is written to file as follows:</p>
 </div>
 <div class="section" id="reaction-kinetics">
 <h2>8.3. Reaction kinetics<a class="headerlink" href="#reaction-kinetics" title="Permalink to this headline">¶</a></h2>
-<p>See <tt class="xref docutils literal"><span class="pre">tamkin.chemmod.KineticModel</span></tt> for the details.</p>
+<p>See <a title="tamkin.chemmod.KineticModel" class="reference external" href="../reference/pf.html#tamkin.chemmod.KineticModel"><tt class="xref docutils literal"><span class="pre">tamkin.chemmod.KineticModel</span></tt></a> for the details.</p>
 <p>All kinetic properties in TAMkin are computed with the <tt class="docutils literal"><span class="pre">KineticModel</span></tt> object.
 For a given list of reactant partition functions, <tt class="docutils literal"><span class="pre">pfs_react</span></tt> and a transition
 state partition function, <tt class="docutils literal"><span class="pre">pf_trans</span></tt>, the <tt class="docutils literal"><span class="pre">KineticModel</span></tt> object is created
@@ -614,7 +617,7 @@ partition functions, is written to file as follows:</p>
 </div>
 <div class="section" id="tunneling-corrections">
 <h3>8.3.1. Tunneling corrections<a class="headerlink" href="#tunneling-corrections" title="Permalink to this headline">¶</a></h3>
-<p>Three tunneling correction models are implemented in <tt class="xref docutils literal"><span class="pre">tamkin.tunneling</span></tt>.
+<p>Three tunneling correction models are implemented in <a title="" class="reference external" href="../reference/pf.html#module-tamkin.tunneling"><tt class="xref docutils literal"><span class="pre">tamkin.tunneling</span></tt></a>.
 One can include tunneling corrections in the kinetic model by giving a
 <tt class="docutils literal"><span class="pre">TunnelingCorrection</span></tt> object as the third argument to the <tt class="docutils literal"><span class="pre">KineticModel</span></tt>
 constructor. One must first create the tunneling object:</p>
@@ -632,7 +635,7 @@ correction. The other properties computed by the kinetic model are not affected.
 </div>
 <div class="section" id="reactionanalysis-objects-fitting-kinetic-parameters-a-and-ea">
 <h3>8.3.2. ReactionAnalysis objects &#8211; fitting kinetic parameters A and E<sub>a</sub><a class="headerlink" href="#reactionanalysis-objects-fitting-kinetic-parameters-a-and-ea" title="Permalink to this headline">¶</a></h3>
-<p>See <tt class="xref docutils literal"><span class="pre">tamkin.pftools.ReactionAnalysis</span></tt> for the details.</p>
+<p>See <a title="tamkin.pftools.ReactionAnalysis" class="reference external" href="../reference/pf.html#tamkin.pftools.ReactionAnalysis"><tt class="xref docutils literal"><span class="pre">tamkin.pftools.ReactionAnalysis</span></tt></a> for the details.</p>
 <p>The ultimate purpose of a <tt class="docutils literal"><span class="pre">KineticModel</span></tt> object is to estimate the kinetic
 parameters <img class="math" src="../images/math/019e9892786e493964e145e7c5cf7b700314e53b.png" alt="A"/> and <img class="math" src="../images/math/56a82f7785e24c275a5c85ce43d56fa4c2b49b1c.png" alt="E_a"/> in the empirical Arrhenius law. This can
 be accomplished with a ReactionAnalysis object. As soon as a reaction analysis
@@ -743,6 +746,9 @@ Arrhenius plot as follows:</p>
         <li class="right" style="margin-right: 10px">
           <a href="../genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
         <li class="right" >
           <a href="chemphys_examples.html" title="9. Chemical Physics – Basic TAMkin recipes"
              >next</a> |</li>

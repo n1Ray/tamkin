@@ -33,6 +33,9 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
           <a href="data.html" title="5. Generating data for TAMkin"
              accesskey="N">next</a> |</li>
         <li class="right" >
@@ -57,7 +60,7 @@
 <dt>Part 1 = Molecule</dt>
 <dd>A collection of IO routines read the output from several quantum chemistry
 codes: CHARMM, CP2K, CPMD, GAMESS, Gaussian, QChem and VASP. All these
-routines are bundled in the package <tt class="xref docutils literal"><span class="pre">tamkin.io</span></tt>. The output from these
+routines are bundled in the package <a title="" class="reference external" href="../reference/io.html#module-tamkin.io"><tt class="xref docutils literal"><span class="pre">tamkin.io</span></tt></a>. The output from these
 codes is represented in a uniform <tt class="docutils literal"><span class="pre">Molecule</span></tt> class that is used by the rest
 of the code.</dd>
 <dt>Part 2 = NMA</dt>
@@ -165,7 +168,7 @@ the rest of the script.</p>
 <p>The masses, coordinates, energy, gradient and Hessian are read from the file
 <tt class="docutils literal"><span class="pre">gaussian.fchk</span></tt>. The data are stored in a <tt class="docutils literal"><span class="pre">Molecule</span></tt> object, which we
 give here the name <tt class="docutils literal"><span class="pre">molecule</span></tt>.</p>
-<p>See <tt class="xref docutils literal"><span class="pre">tamkin.data.Molecule</span></tt> for a more details.</p>
+<p>See <a title="tamkin.data.Molecule" class="reference external" href="../reference/aux.html#tamkin.data.Molecule"><tt class="xref docutils literal"><span class="pre">tamkin.data.Molecule</span></tt></a> for a more details.</p>
 </li>
 <li><p class="first"><strong>Perform normal mode analysis</strong>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">nma</span> <span class="o">=</span> <span class="n">NMA</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="n">ConstrainExt</span><span class="p">())</span>
@@ -178,7 +181,7 @@ normal mode analysis that is used to obtain frequencies.</p>
 3N degrees of freedom. The <tt class="docutils literal"><span class="pre">ConstrainExt()</span></tt> variant will perform the normal
 mode analysis in 3N-6 (or 3N-5) internal coordinates and leads to frequencies
 that are identical to those of Gaussian.</p>
-<p>See <tt class="xref docutils literal"><span class="pre">tamkin.nma.NMA</span></tt> for a more details.</p>
+<p>See <a title="tamkin.nma.NMA" class="reference external" href="../reference/nma.html#tamkin.nma.NMA"><tt class="xref docutils literal"><span class="pre">tamkin.nma.NMA</span></tt></a> for a more details.</p>
 </li>
 <li><p class="first"><strong>Construct a partition function</strong>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">pf</span> <span class="o">=</span> <span class="n">PartFun</span><span class="p">(</span><span class="n">nma</span><span class="p">,</span> <span class="p">[</span><span class="n">ExtTrans</span><span class="p">(),</span> <span class="n">ExtRot</span><span class="p">()])</span>
@@ -189,7 +192,7 @@ thermodynamic quantities are methods or attributes of the PartFun object.
 The translational and rotational contributions are included by adding
 <tt class="docutils literal"><span class="pre">[ExtTrans(),</span> <span class="pre">ExtRot()]</span></tt> as an argument. The vibrational and electronic
 contribution is included implicitely.</p>
-<p>See <tt class="xref docutils literal"><span class="pre">tamkin.partf.PartFun</span></tt> for a more details.</p>
+<p>See <a title="tamkin.partf.PartFun" class="reference external" href="../reference/pf.html#tamkin.partf.PartFun"><tt class="xref docutils literal"><span class="pre">tamkin.partf.PartFun</span></tt></a> for a more details.</p>
 </li>
 <li><p class="first"><strong>Generate some output</strong>, e.g.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">pf</span><span class="o">.</span><span class="n">write_to_file</span><span class="p">(</span><span class="s">&quot;partfun.txt&quot;</span><span class="p">)</span>
@@ -253,6 +256,9 @@ contribution is included implicitely.</p>
         <li class="right" style="margin-right: 10px">
           <a href="../genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
         <li class="right" >
           <a href="data.html" title="5. Generating data for TAMkin"
              >next</a> |</li>
