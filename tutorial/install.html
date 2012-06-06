@@ -7,8 +7,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
     <title>1. Installation of TAMkin software &mdash; TAMkin v0.0 documentation</title>
-    <link rel="stylesheet" href="../static/default.css" type="text/css" />
-    <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
@@ -18,9 +18,9 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="../static/jquery.js"></script>
-    <script type="text/javascript" src="../static/underscore.js"></script>
-    <script type="text/javascript" src="../static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="top" title="TAMkin v0.0 documentation" href="../index.html" />
     <link rel="next" title="2. If you encounter a problem" href="support.html" />
     <link rel="prev" title="The TAMkin Manual" href="../index.html" /> 
@@ -116,11 +116,10 @@ sudo zypper install python-devel python-numpy python-scipy gcc gcc-fortran git</
 </div>
 <div class="section" id="installing-the-latest-version-of-tamkin">
 <h2>1.4. Installing the latest version of TAMkin<a class="headerlink" href="#installing-the-latest-version-of-tamkin" title="Permalink to this headline">¶</a></h2>
-<p>The following series of commands will download the latest versions of the
-MolMod package (required) and TAMkin, and will then install them into your
-home directory. Make sure you execute these commands in some sort of temporary
-directory.</p>
-<div class="highlight-python"><pre>git clone git://github.com/molmod/tamkin.git
+<p>The following series of commands will download the latest version of TAMkin, and
+will then install it into your home directory.</p>
+<div class="highlight-python"><pre>cd ~/build/
+git clone git://github.com/molmod/tamkin.git
 (cd tamkin; ./setup.py install --home=~)</pre>
 </div>
 <p>You are now ready to start using TAMkin!</p>
@@ -139,14 +138,13 @@ following directories:</p>
 <p>The Python modules should be accessible from any Python session. This can be
 checked by starting Python interactively and loading the modules manually. There
 should be no errors when importing the modules:</p>
-<div class="highlight-python"><pre>toon@poony ~&gt; python
+<div class="highlight-python"><pre>$ python
 Python 2.6.5 (r265:79063, Apr 16 2010, 13:57:41)
 [GCC 4.4.3] on linux2
 Type "help", "copyright", "credits" or "license" for more information.
 &gt;&gt;&gt; import tamkin
 &gt;&gt;&gt; import molmod
-&gt;&gt;&gt; quit()
-toon@poony ~&gt;</pre>
+&gt;&gt;&gt; quit()</pre>
 </div>
 </div>
 <div class="section" id="upgrading-to-the-latest-version-of-molmod-and-tamkin">
@@ -154,16 +152,44 @@ toon@poony ~&gt;</pre>
 <p>In case you want to upgrade TAMkin to the latests development version after a
 previous install, then execute the following commands (in the same directory
 that was originall used to install TAMkin):</p>
-<div class="highlight-python"><pre>(cd molmod; git pull; rm -r ~/lib*/python/molmod*; ./setup.py install --home=~)
+<div class="highlight-python"><pre>cd ~/build/
+(cd molmod; git pull; rm -r ~/lib*/python/molmod*; ./setup.py install --home=~)
 (cd tamkin; git pull; rm -r ~/lib*/python/tamkin*; ./setup.py install --home=~)</pre>
 </div>
 </div>
 <div class="section" id="testing-your-installation">
 <h2>1.7. Testing your installation<a class="headerlink" href="#testing-your-installation" title="Permalink to this headline">¶</a></h2>
-<p>The unit tests included in the source tree can be used to check if various
-components of TAMkin produces the correct results:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">nostests</span> <span class="o">-</span><span class="n">v</span>
-</pre></div>
+<p>For the development and testing one needs to install one additional package:</p>
+<ul class="simple">
+<li>Nosetests &gt;= 0.11: <a class="reference external" href="http://somethingaboutorange.com/mrl/projects/nose/0.11.2/">http://somethingaboutorange.com/mrl/projects/nose/0.11.2/</a></li>
+</ul>
+<p>Most Linux distributions can install this software with just a single command on
+the command line by the administrator.</p>
+<ul>
+<li><p class="first">Ubuntu 10.4:</p>
+<div class="highlight-python"><pre>sudo apt-get install python-nose</pre>
+</div>
+</li>
+<li><p class="first">Debian 5:</p>
+<div class="highlight-python"><pre>su -
+apt-get install python-nose
+exit</pre>
+</div>
+</li>
+<li><p class="first">Fedora 17:</p>
+<div class="highlight-python"><pre>sudo yum install python-nose</pre>
+</div>
+</li>
+<li><p class="first">Suse 11.2:</p>
+<div class="highlight-python"><pre>sudo zypper install python-nose</pre>
+</div>
+</li>
+</ul>
+<p>Once these dependecies are installed, execute the following commands to run the
+tests:</p>
+<div class="highlight-python"><pre>cd ~/build/
+cd tamkin
+nosetests -v</pre>
 </div>
 <p>If some tests fail, post the output of the tests on the <a class="reference external" href="https://groups.google.com/forum/#!forum/tamkin">TAMkin
 mailing list</a>.</p>
@@ -198,7 +224,7 @@ mailing list</a>.</p>
                         title="next chapter">2. If you encounter a problem</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="../sources/tutorial/install.txt"
+    <li><a href="../_sources/tutorial/install.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">

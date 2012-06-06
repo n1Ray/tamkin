@@ -7,8 +7,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
     <title>9. Chemical Physics – Basic TAMkin recipes &mdash; TAMkin v0.0 documentation</title>
-    <link rel="stylesheet" href="../static/default.css" type="text/css" />
-    <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
@@ -18,9 +18,9 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="../static/jquery.js"></script>
-    <script type="text/javascript" src="../static/underscore.js"></script>
-    <script type="text/javascript" src="../static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="top" title="TAMkin v0.0 documentation" href="../index.html" />
     <link rel="next" title="10. Chemical Physics – Advanced TAMkin examples" href="chemphys_advanced.html" />
     <link rel="prev" title="8. Chemical Physics – Working with TAMkin" href="chemphys_tamkin.html" /> 
@@ -77,7 +77,7 @@ toon@poony ~/code/tamkin/examples&gt; ls
 <p>We will study the thermodynamic equilibrium between the two butane conformers:
 trans and gauche. The balance is as follows:</p>
 <div class="math">
-<p><img src="../images/math/7ad0bef6e7b3233b63fceccfc9c411c90ea1aea1.png" alt="butane (trans,gas) $\leftrightharpoons$ butane (gauche,gas)" /></p>
+<p><img src="../_images/math/7ad0bef6e7b3233b63fceccfc9c411c90ea1aea1.png" alt="butane (trans,gas) $\leftrightharpoons$ butane (gauche,gas)" /></p>
 </div><p>Both butane geometries are optimized using the B3LYP/6-31G(d) level of theory,
 and consequently frequency computations are carried out using Gaussian03. The
 formatted checkpoint files of the frequency jobs are <tt class="docutils literal"><span class="pre">trans.fchk</span></tt> and
@@ -213,12 +213,12 @@ associated with the reaction.</p>
 <p>From the equilibrium constant one can derive the probability of finding a trans
 or a gauche conformer at 300K:</p>
 <div class="math">
-<p><img src="../images/math/3a242636ba30a6fbf448313fc476e73ef124deaa.png" alt="K_c = \frac{p_\text{gauche}}{p_\text{trans}}" /></p>
+<p><img src="../_images/math/3a242636ba30a6fbf448313fc476e73ef124deaa.png" alt="K_c = \frac{p_\text{gauche}}{p_\text{trans}}" /></p>
 </div><p>Given that the probabilities sum to unity, one gets:</p>
 <div class="math">
-<p><img src="../images/math/819bbed2c21edd3154f144b08bfb9c79a63f59c5.png" alt="p_\text{trans} = \frac{1}{1+K_c} \approx 69\%" /></p>
+<p><img src="../_images/math/819bbed2c21edd3154f144b08bfb9c79a63f59c5.png" alt="p_\text{trans} = \frac{1}{1+K_c} \approx 69\%" /></p>
 </div><div class="math">
-<p><img src="../images/math/8ce77e55eebf36dfd982e80edd23018f78a4f46b.png" alt="p_\text{gauche} = \frac{K_c}{1+K_c} \approx 31\%" /></p>
+<p><img src="../_images/math/8ce77e55eebf36dfd982e80edd23018f78a4f46b.png" alt="p_\text{gauche} = \frac{K_c}{1+K_c} \approx 31\%" /></p>
 </div></div>
 <div class="section" id="a-log-file-with-an-description-of-the-equilibrium">
 <h3>9.2.2. A log file with an description of the equilibrium<a class="headerlink" href="#a-log-file-with-an-description-of-the-equilibrium" title="Permalink to this headline">¶</a></h3>
@@ -319,7 +319,7 @@ Contributions to the partition function:
 phase). This comes down to the computation of the chemical equilibrium
 properties of the following reaction:</p>
 <div class="math">
-<p><img src="../images/math/3271c8faac4de609af2d6b33773a4d3277c6ed01.png" alt="O$_2$ (gas) + 2H$_2$ (gas) $\leftrightharpoons$ 2H$_2$O (gas)" /></p>
+<p><img src="../_images/math/3271c8faac4de609af2d6b33773a4d3277c6ed01.png" alt="O$_2$ (gas) + 2H$_2$ (gas) $\leftrightharpoons$ 2H$_2$O (gas)" /></p>
 </div><p>As we will see below, this is not an equilibrium reaction, so the term <cite>chemical
 equilibrium</cite> is somewhat misleading. The point is that the underlying
 computation is exactly that of any other thermodynamic equilibrium with TAMkin.</p>
@@ -600,7 +600,7 @@ moments of inertia.</p>
 <p>In this example we show how one estimates kinetic parameters for the addition of
 ethene to ethyl in the gas phase at constant pressure. The reaction balance is</p>
 <div class="math">
-<p><img src="../images/math/7a91a8c74bacae130e750ba972857538f2c872e6.png" alt="\newcommand{\rad}{\raisebox{0.4ex}{\scriptsize{\ensuremath{\bullet}}}}
+<p><img src="../_images/math/7a91a8c74bacae130e750ba972857538f2c872e6.png" alt="\newcommand{\rad}{\raisebox{0.4ex}{\scriptsize{\ensuremath{\bullet}}}}
 
 CH$_2$=CH$_2$ (gas) + \rad{C}H$_2-$CH$_3$ (gas) $\rightarrow$ \rad{C}H$_2$-CH$_2$-CH$_2$-CH$_3$ (gas)" /></p>
 </div><p>For this example we prepared three frequency computations:</p>
@@ -615,7 +615,7 @@ frequency job is <tt class="docutils literal"><span class="pre">ts_trans.fchk</s
 </ul>
 <p>The frequency computations are carried out with Gaussian03. The level of theory
 is B3LYP/6-31G(d). The following script computes the kinetic parameters (A and
-E<sub>a</sub>) through a linear fit of <img class="math" src="../images/math/01522c5d857d3f6ccae762d91902de829c15c0b8.png" alt="\ln(k)"/> versus <img class="math" src="../images/math/2554b6496c3b678897e9b060ef00aa9f0a7d7ece.png" alt="T"/> in the
+E<sub>a</sub>) through a linear fit of <img class="math" src="../_images/math/01522c5d857d3f6ccae762d91902de829c15c0b8.png" alt="\ln(k)"/> versus <img class="math" src="../_images/math/2554b6496c3b678897e9b060ef00aa9f0a7d7ece.png" alt="T"/> in the
 temperature range 300K-600K.</p>
 <p>File: <tt class="docutils literal"><span class="pre">examples/019_ethyl_ethene_simple/kinetic.py</span></tt></p>
 <div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><pre> 1
@@ -797,7 +797,7 @@ associated with the reaction.</p>
 <p>The file <tt class="docutils literal"><span class="pre">arrhenius.png</span></tt> contains the Arrhenius plot. This plot can be used
 for a visual check of the linear regression analysis to estimate the kinetic
 parameters.</p>
-<img alt="../images/arrhenius_bimolecular_gas_phase.png" src="../images/arrhenius_bimolecular_gas_phase.png" />
+<img alt="../_images/arrhenius_bimolecular_gas_phase.png" src="../_images/arrhenius_bimolecular_gas_phase.png" />
 </div>
 <div class="section" id="a-log-file-with-an-analysis-of-the-kinetic-parameters">
 <h3>9.6.3. A log file with an analysis of the kinetic parameters<a class="headerlink" href="#a-log-file-with-an-analysis-of-the-kinetic-parameters" title="Permalink to this headline">¶</a></h3>
@@ -1057,7 +1057,7 @@ the molecule,</p>
                         title="next chapter">10. Chemical Physics &#8211; Advanced TAMkin examples</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="../sources/tutorial/chemphys_examples.txt"
+    <li><a href="../_sources/tutorial/chemphys_examples.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">

@@ -7,8 +7,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
     <title>8. Chemical Physics – Working with TAMkin &mdash; TAMkin v0.0 documentation</title>
-    <link rel="stylesheet" href="../static/default.css" type="text/css" />
-    <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
@@ -18,9 +18,9 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="../static/jquery.js"></script>
-    <script type="text/javascript" src="../static/underscore.js"></script>
-    <script type="text/javascript" src="../static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="top" title="TAMkin v0.0 documentation" href="../index.html" />
     <link rel="next" title="9. Chemical Physics – Basic TAMkin recipes" href="chemphys_examples.html" />
     <link rel="prev" title="7. Chemical Physics – Theoretical Background" href="chemphys_theory.html" /> 
@@ -410,7 +410,7 @@ methods to the meaning of the returned numbers for two common ensembles.</p>
 </tr>
 <tr><td><tt class="docutils literal"><span class="pre">logv</span></tt></td>
 <td>1/particle</td>
-<td><tt class="docutils literal"><span class="pre">logn</span></tt> - <img class="math" src="../images/math/db8039f4a47a6f67dab0a7997606f6db6bb52ab7.png" alt="\ln(V/N)"/></td>
+<td><tt class="docutils literal"><span class="pre">logn</span></tt> - <img class="math" src="../_images/math/db8039f4a47a6f67dab0a7997606f6db6bb52ab7.png" alt="\ln(V/N)"/></td>
 <td>(idem)</td>
 </tr>
 </tbody>
@@ -487,23 +487,23 @@ the <tt class="docutils literal"><span class="pre">PartFun</span></tt> methods a
 <td>J/(mol*K)</td>
 <td><tt class="docutils literal"><span class="pre">entropy</span></tt></td>
 </tr>
-<tr><td>log= <img class="math" src="../images/math/0839f51933916a6d92cc489f3bc4f203b34e7949.png" alt="\frac{log(Z_N)}{N}"/></td>
+<tr><td>log= <img class="math" src="../_images/math/0839f51933916a6d92cc489f3bc4f203b34e7949.png" alt="\frac{log(Z_N)}{N}"/></td>
 <td>1</td>
 <td><tt class="docutils literal"><span class="pre">log</span></tt></td>
 </tr>
-<tr><td>logt= <img class="math" src="../images/math/8d731bbc3d7f3dca3a98d9a65a9e9b68d1358993.png" alt="\frac{\partial}{\partial T}\left(\frac{log(Z_N)}{N}\right)"/></td>
+<tr><td>logt= <img class="math" src="../_images/math/8d731bbc3d7f3dca3a98d9a65a9e9b68d1358993.png" alt="\frac{\partial}{\partial T}\left(\frac{log(Z_N)}{N}\right)"/></td>
 <td>1/K</td>
 <td><tt class="docutils literal"><span class="pre">logt</span></tt></td>
 </tr>
-<tr><td>logtt= <img class="math" src="../images/math/5b2e90cdc4226179d2dc45fdd3691da05cf95822.png" alt="\frac{\partial^2}{\partial T^2}\left(\frac{log(Z_N)}{N}\right)"/></td>
+<tr><td>logtt= <img class="math" src="../_images/math/5b2e90cdc4226179d2dc45fdd3691da05cf95822.png" alt="\frac{\partial^2}{\partial T^2}\left(\frac{log(Z_N)}{N}\right)"/></td>
 <td>1/K^2</td>
 <td><tt class="docutils literal"><span class="pre">logtt</span></tt></td>
 </tr>
-<tr><td>logn= <img class="math" src="../images/math/e605239ae294d16c89adf0dcb34e09469618ce1b.png" alt="\frac{\partial log(Z_N)}{\partial N}"/></td>
+<tr><td>logn= <img class="math" src="../_images/math/e605239ae294d16c89adf0dcb34e09469618ce1b.png" alt="\frac{\partial log(Z_N)}{\partial N}"/></td>
 <td>1</td>
 <td><tt class="docutils literal"><span class="pre">logn</span></tt></td>
 </tr>
-<tr><td>logv= <img class="math" src="../images/math/1a70523eaa3c3cf4a034ad09a89f5424c0af2faa.png" alt="\frac{\partial log(Z_N)}{\partial N} - \ln(V/N)"/></td>
+<tr><td>logv= <img class="math" src="../_images/math/1a70523eaa3c3cf4a034ad09a89f5424c0af2faa.png" alt="\frac{\partial log(Z_N)}{\partial N} - \ln(V/N)"/></td>
 <td>1 or ln(bohr^-dim)</td>
 <td><tt class="docutils literal"><span class="pre">logv</span></tt></td>
 </tr>
@@ -538,7 +538,7 @@ For example:</p>
 </pre></div>
 </div>
 <p>Currently TAMkin only supports ideal gases in the translational partition
-function which means that <img class="math" src="../images/math/825d4a850ce86001717f9dd103440c874fe66f3f.png" alt="K_c"/> does not depend on the pressure set in
+function which means that <img class="math" src="../_images/math/825d4a850ce86001717f9dd103440c874fe66f3f.png" alt="K_c"/> does not depend on the pressure set in
 <tt class="docutils literal"><span class="pre">ExtTrans.pressure</span></tt> or the density set in <tt class="docutils literal"><span class="pre">ExtTrans.density</span></tt>. (When no
 translational freedom is included in the partition function, there is no
 pressure or density to worry about.)</p>
@@ -637,7 +637,7 @@ correction. The other properties computed by the kinetic model are not affected.
 <h3>8.3.2. ReactionAnalysis objects &#8211; fitting kinetic parameters A and E<sub>a</sub><a class="headerlink" href="#reactionanalysis-objects-fitting-kinetic-parameters-a-and-ea" title="Permalink to this headline">¶</a></h3>
 <p>See <a title="tamkin.pftools.ReactionAnalysis" class="reference external" href="../reference/pf.html#tamkin.pftools.ReactionAnalysis"><tt class="xref docutils literal"><span class="pre">tamkin.pftools.ReactionAnalysis</span></tt></a> for the details.</p>
 <p>The ultimate purpose of a <tt class="docutils literal"><span class="pre">KineticModel</span></tt> object is to estimate the kinetic
-parameters <img class="math" src="../images/math/019e9892786e493964e145e7c5cf7b700314e53b.png" alt="A"/> and <img class="math" src="../images/math/56a82f7785e24c275a5c85ce43d56fa4c2b49b1c.png" alt="E_a"/> in the empirical Arrhenius law. This can
+parameters <img class="math" src="../_images/math/019e9892786e493964e145e7c5cf7b700314e53b.png" alt="A"/> and <img class="math" src="../_images/math/56a82f7785e24c275a5c85ce43d56fa4c2b49b1c.png" alt="E_a"/> in the empirical Arrhenius law. This can
 be accomplished with a ReactionAnalysis object. As soon as a reaction analysis
 object is created, the kinetic parameters are fitted and stored internally for
 post-processing or direct output:</p>
@@ -720,7 +720,7 @@ Arrhenius plot as follows:</p>
                         title="next chapter">9. Chemical Physics &#8211; Basic TAMkin recipes</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="../sources/tutorial/chemphys_tamkin.txt"
+    <li><a href="../_sources/tutorial/chemphys_tamkin.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">

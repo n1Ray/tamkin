@@ -7,8 +7,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
     <title>3. Partition functions &mdash; TAMkin v0.0 documentation</title>
-    <link rel="stylesheet" href="../static/default.css" type="text/css" />
-    <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
@@ -18,9 +18,9 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="../static/jquery.js"></script>
-    <script type="text/javascript" src="../static/underscore.js"></script>
-    <script type="text/javascript" src="../static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="top" title="TAMkin v0.0 documentation" href="../index.html" />
     <link rel="next" title="4. Auxiliary modules" href="aux.html" />
     <link rel="prev" title="2. Normal mode analysis" href="nma.html" /> 
@@ -56,17 +56,17 @@
 <h2>3.1. The molecular partion function<a class="headerlink" href="#module-tamkin.partf" title="Permalink to this headline">¶</a></h2>
 <p><strong>Inheritance diagram</strong></p>
 <p class="graphviz">
-<img src="../images/inheritance-0c5df80a4a1abb992d77f8ea3abcbe1de39bcfd4.png" alt="Inheritance diagram of tamkin.partf" usemap="#inheritance37628f8cbb" class="inheritance"/>
+<img src="../_images/inheritance-b59f0634faf8110cf8b9753d28025d4e0ac5e435.png" alt="Inheritance diagram of tamkin.partf" usemap="#inheritance37628f8cbb" class="inheritance"/>
 <map id="inheritance37628f8cbb" name="inheritance37628f8cbb">
-<area shape="rect" id="node1" href="#tamkin.partf.ExtTrans" title="ExtTrans" alt="" coords="435,83,509,111"/>
-<area shape="rect" id="node2" href="#tamkin.partf.Info" title="Info" alt="" coords="387,6,459,34"/>
-<area shape="rect" id="node6" href="#tamkin.partf.Vibrations" title="Vibrations" alt="" coords="328,161,413,189"/>
-<area shape="rect" id="node10" href="#tamkin.partf.PCMCorrection" title="PCMCorrection" alt="" coords="533,83,648,111"/>
-<area shape="rect" id="node13" href="#tamkin.partf.Electronic" title="Electronic" alt="" coords="136,83,219,111"/>
-<area shape="rect" id="node16" href="#tamkin.partf.ExtRot" title="ExtRot" alt="" coords="243,83,315,111"/>
-<area shape="rect" id="node20" href="#tamkin.partf.PartFun" title="PartFun" alt="" coords="339,83,411,111"/>
-<area shape="rect" id="node4" href="#tamkin.partf.StatFys" title="StatFys" alt="" coords="267,6,339,34"/>
-<area shape="rect" id="node8" href="#tamkin.partf.StatFysTerms" title="StatFysTerms" alt="" coords="5,83,112,111"/>
+<area shape="rect" id="node1" href="#tamkin.partf.PartFun" title="PartFun" alt="" coords="480,83,552,111"/>
+<area shape="rect" id="node2" href="#tamkin.partf.Info" title="Info" alt="" coords="429,6,501,34"/>
+<area shape="rect" id="node8" href="#tamkin.partf.ExtRot" title="ExtRot" alt="" coords="576,83,648,111"/>
+<area shape="rect" id="node11" href="#tamkin.partf.ExtTrans" title="ExtTrans" alt="" coords="136,83,211,111"/>
+<area shape="rect" id="node14" href="#tamkin.partf.PCMCorrection" title="PCMCorrection" alt="" coords="235,83,349,111"/>
+<area shape="rect" id="node17" href="#tamkin.partf.Vibrations" title="Vibrations" alt="" coords="328,161,413,189"/>
+<area shape="rect" id="node20" href="#tamkin.partf.Electronic" title="Electronic" alt="" coords="373,83,456,111"/>
+<area shape="rect" id="node4" href="#tamkin.partf.StatFys" title="StatFys" alt="" coords="295,6,367,34"/>
+<area shape="rect" id="node6" href="#tamkin.partf.StatFysTerms" title="StatFysTerms" alt="" coords="5,83,112,111"/>
 </map>
 </p>
 <p>The workhorse of this module is the <strong>PartFun</strong> class. A PartFun object
@@ -284,13 +284,13 @@ helpert, helpertt) must be implemented in derived classes.</p>
 <dd><p>Helper function.</p>
 <p>Returns</p>
 <div class="math">
-<p><img src="../images/math/4b6fdd66f0bc0a1099c4b46e87802c9164d43783.png" alt="T^n \frac{\ln(Z_N)}{N}" /></p>
-</div><p>where <img class="math" src="../images/math/3a9fdd7a7ca370875115e506f4362d729ed94e77.png" alt="Z_N"/> is (the contribution to) the many body partition
-function and <img class="math" src="../images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> is the total number of particles. In all
+<p><img src="../_images/math/4b6fdd66f0bc0a1099c4b46e87802c9164d43783.png" alt="T^n \frac{\ln(Z_N)}{N}" /></p>
+</div><p>where <img class="math" src="../_images/math/3a9fdd7a7ca370875115e506f4362d729ed94e77.png" alt="Z_N"/> is (the contribution to) the many body partition
+function and <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> is the total number of particles. In all
 cases, except for the translational contribution, this comes down to:</p>
 <div class="math">
-<p><img src="../images/math/b31efe2f0f0fe71fd8cfc36c8cfa4248ccbe7b47.png" alt="T^n \ln(Z_1)" /></p>
-</div><p>where <img class="math" src="../images/math/90b6bf917826bbd1085455a7da8c0653516fb2c2.png" alt="\ln(Z_1)"/> is the single-particle contribution to the
+<p><img src="../_images/math/b31efe2f0f0fe71fd8cfc36c8cfa4248ccbe7b47.png" alt="T^n \ln(Z_1)" /></p>
+</div><p>where <img class="math" src="../_images/math/90b6bf917826bbd1085455a7da8c0653516fb2c2.png" alt="\ln(Z_1)"/> is the single-particle contribution to the
 partition function.</p>
 <dl class="docutils">
 <dt>Arguments:</dt>
@@ -308,9 +308,9 @@ partition function.</p>
 <dd><p>Helper function N.</p>
 <p>Returns</p>
 <div class="math">
-<p><img src="../images/math/ade320bf2504cf29c40dc9005c53d017f93791cc.png" alt="T^n \frac{\partial \ln(Z_N)}{\partial N}" /></p>
-</div><p>where <img class="math" src="../images/math/3a9fdd7a7ca370875115e506f4362d729ed94e77.png" alt="Z_N"/> is (the contribution to) the many body partition
-function and <img class="math" src="../images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> is the total number of particles. This is used
+<p><img src="../_images/math/ade320bf2504cf29c40dc9005c53d017f93791cc.png" alt="T^n \frac{\partial \ln(Z_N)}{\partial N}" /></p>
+</div><p>where <img class="math" src="../_images/math/3a9fdd7a7ca370875115e506f4362d729ed94e77.png" alt="Z_N"/> is (the contribution to) the many body partition
+function and <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> is the total number of particles. This is used
 to compute the chemical potential and reaction free energies. In all
 cases, except for the total partition function and translational
 contribution, this comes down to the method <tt class="docutils literal"><span class="pre">helper</span></tt>.</p>
@@ -330,13 +330,13 @@ contribution, this comes down to the method <tt class="docutils literal"><span c
 <dd><p>Helper function T.</p>
 <p>Returns</p>
 <div class="math">
-<p><img src="../images/math/0ac397d59d3403c30040bce92a56c1e5d9195bab.png" alt="T^n \frac{d \left(\frac{\ln(Z_N)}{N}\right)}{dT}" /></p>
-</div><p>where <img class="math" src="../images/math/3a9fdd7a7ca370875115e506f4362d729ed94e77.png" alt="Z_N"/> is (the contribution to) the many body partition
-function and <img class="math" src="../images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> is the total number of particles.  In all
+<p><img src="../_images/math/0ac397d59d3403c30040bce92a56c1e5d9195bab.png" alt="T^n \frac{d \left(\frac{\ln(Z_N)}{N}\right)}{dT}" /></p>
+</div><p>where <img class="math" src="../_images/math/3a9fdd7a7ca370875115e506f4362d729ed94e77.png" alt="Z_N"/> is (the contribution to) the many body partition
+function and <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> is the total number of particles.  In all
 cases, except for the translational contribution, this comes down to:</p>
 <div class="math">
-<p><img src="../images/math/12a63f4d44df82e08ffa426f68f15f10f09ecc58.png" alt="T^n \frac{\partial \ln(Z_1)}{\partial T}" /></p>
-</div><p>where <img class="math" src="../images/math/90b6bf917826bbd1085455a7da8c0653516fb2c2.png" alt="\ln(Z_1)"/> is the single-particle contribution to the
+<p><img src="../_images/math/12a63f4d44df82e08ffa426f68f15f10f09ecc58.png" alt="T^n \frac{\partial \ln(Z_1)}{\partial T}" /></p>
+</div><p>where <img class="math" src="../_images/math/90b6bf917826bbd1085455a7da8c0653516fb2c2.png" alt="\ln(Z_1)"/> is the single-particle contribution to the
 partition function.</p>
 <dl class="docutils">
 <dt>Arguments:</dt>
@@ -354,13 +354,13 @@ partition function.</p>
 <dd><p>Helper function TT.</p>
 <p>Returns</p>
 <div class="math">
-<p><img src="../images/math/bf4821eba174ae0fcb72d593a64059544a1ae0c0.png" alt="T^n \frac{d^2 \left(\frac{\ln(Z_N)}{N}\right)}{dT^2}" /></p>
-</div><p>where <img class="math" src="../images/math/3a9fdd7a7ca370875115e506f4362d729ed94e77.png" alt="Z_N"/> is (the contribution to) the many body partition
-function and <img class="math" src="../images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> is the total number of particles. In all
+<p><img src="../_images/math/bf4821eba174ae0fcb72d593a64059544a1ae0c0.png" alt="T^n \frac{d^2 \left(\frac{\ln(Z_N)}{N}\right)}{dT^2}" /></p>
+</div><p>where <img class="math" src="../_images/math/3a9fdd7a7ca370875115e506f4362d729ed94e77.png" alt="Z_N"/> is (the contribution to) the many body partition
+function and <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> is the total number of particles. In all
 cases, except for the translational contribution, this comes down to:</p>
 <div class="math">
-<p><img src="../images/math/4c6c82df2e57d168e1dba76c0f9cbb30cebeacbf.png" alt="T^n \frac{\partial^2 \ln(Z_1)}{\partial T^2}" /></p>
-</div><p>where <img class="math" src="../images/math/90b6bf917826bbd1085455a7da8c0653516fb2c2.png" alt="\ln(Z_1)"/> is the single-particle contribution to the
+<p><img src="../_images/math/4c6c82df2e57d168e1dba76c0f9cbb30cebeacbf.png" alt="T^n \frac{\partial^2 \ln(Z_1)}{\partial T^2}" /></p>
+</div><p>where <img class="math" src="../_images/math/90b6bf917826bbd1085455a7da8c0653516fb2c2.png" alt="\ln(Z_1)"/> is the single-particle contribution to the
 partition function.</p>
 <dl class="docutils">
 <dt>Arguments:</dt>
@@ -380,7 +380,7 @@ partition function.</p>
 total partition function and the translational contribution to the
 partition function. Then it returns</p>
 <div class="math">
-<p><img src="../images/math/a7343ffdf1b2efc1f06eeb552a93550e795efa6f.png" alt="T^n \frac{\partial \ln(Z_N)}{\partial N} - \ln\left(\frac{V}{N}\right)" /></p>
+<p><img src="../_images/math/a7343ffdf1b2efc1f06eeb552a93550e795efa6f.png" alt="T^n \frac{\partial \ln(Z_N)}{\partial N} - \ln\left(\frac{V}{N}\right)" /></p>
 </div><p>This is used for the computation of equilibrium constants, and rate
 constants.</p>
 <dl class="docutils">
@@ -437,11 +437,11 @@ information available in the nma and partf objects.</p>
 <p>The logarithm of the N-particle partition function divided by the
 number of particles:</p>
 <div class="math">
-<p><img src="../images/math/42619d008e3ebe600b0b9df87c2a00b6a40d7355.png" alt="\frac{\ln(Z_N)}{N}" /></p>
+<p><img src="../_images/math/42619d008e3ebe600b0b9df87c2a00b6a40d7355.png" alt="\frac{\ln(Z_N)}{N}" /></p>
 </div><p>For all contributions, except for the translational, this comes down
 to:</p>
 <div class="math">
-<p><img src="../images/math/7331f4d52ebcdb218bc0fa9c2d3d1eb63d869709.png" alt="\ln(Z_1)" /></p>
+<p><img src="../_images/math/7331f4d52ebcdb218bc0fa9c2d3d1eb63d869709.png" alt="\ln(Z_1)" /></p>
 </div><dl class="docutils">
 <dt>Argument:</dt>
 <dd><div class="first last line-block">
@@ -464,7 +464,7 @@ to:</p>
 <p>The derivative of the logarithm of the many-particle partition
 function towards to number of particles.</p>
 <div class="math">
-<p><img src="../images/math/463de1ea8136fbc14831ab713ff2df99e36b8ea7.png" alt="\frac{\partial \ln(Z_N)}{\partial N}" /></p>
+<p><img src="../_images/math/463de1ea8136fbc14831ab713ff2df99e36b8ea7.png" alt="\frac{\partial \ln(Z_N)}{\partial N}" /></p>
 </div><p>In most cases, this is the same as the logarithm of the
 single-particle partition divided by the number of particles. (see
 method <tt class="docutils literal"><span class="pre">log</span></tt>.) The only exception is the translational contribution
@@ -492,11 +492,11 @@ function.</p>
 <p>The derivative towards temperature of the logarithm of the N-particle
 partition function divided by the number of particles:</p>
 <div class="math">
-<p><img src="../images/math/c53b734b0c935cdd5f0353d42d5ecc583ded4125.png" alt="\frac{d \left(\frac{\ln(Z_N)}{N}\right)}{dT}" /></p>
+<p><img src="../_images/math/c53b734b0c935cdd5f0353d42d5ecc583ded4125.png" alt="\frac{d \left(\frac{\ln(Z_N)}{N}\right)}{dT}" /></p>
 </div><p>For all contributions, except for the translational, this comes down
 to:</p>
 <div class="math">
-<p><img src="../images/math/170a2c229f5a00d3e7fb56e76b0e82bd31058468.png" alt="\frac{\partial \ln(Z_1)}{\partial T}" /></p>
+<p><img src="../_images/math/170a2c229f5a00d3e7fb56e76b0e82bd31058468.png" alt="\frac{\partial \ln(Z_1)}{\partial T}" /></p>
 </div><dl class="docutils">
 <dt>Argument:</dt>
 <dd><div class="first last line-block">
@@ -519,11 +519,11 @@ to:</p>
 <p>The second derivative towards temperature of the logarithm of the
 N-particle partition function divided by the number of particles.</p>
 <div class="math">
-<p><img src="../images/math/ed01333629861552fbda9d849dce26abd75869e3.png" alt="\frac{d^2 \left(\frac{\ln(Z_N)}{N}\right)}{dT^2}" /></p>
+<p><img src="../_images/math/ed01333629861552fbda9d849dce26abd75869e3.png" alt="\frac{d^2 \left(\frac{\ln(Z_N)}{N}\right)}{dT^2}" /></p>
 </div><p>For all contributions, except for the translational, this comes down
 to:</p>
 <div class="math">
-<p><img src="../images/math/a5cdb8adc2977ae2a403392514f9b51636c47d1c.png" alt="\frac{\partial^2 \ln(Z_1)}{\partial T^2}" /></p>
+<p><img src="../_images/math/a5cdb8adc2977ae2a403392514f9b51636c47d1c.png" alt="\frac{\partial^2 \ln(Z_1)}{\partial T^2}" /></p>
 </div><dl class="docutils">
 <dt>Argument:</dt>
 <dd><div class="first last line-block">
@@ -547,7 +547,7 @@ to:</p>
 total partition function and the translational contribution to the
 partition function. Then it returns</p>
 <div class="math">
-<p><img src="../images/math/7a3327aa4f9ff034bf68bc6700fbbb6905b3f686.png" alt="\frac{\partial \ln(Z_N)}{\partial N} - \ln\left(\frac{V}{N}\right)" /></p>
+<p><img src="../_images/math/7a3327aa4f9ff034bf68bc6700fbbb6905b3f686.png" alt="\frac{\partial \ln(Z_N)}{\partial N} - \ln\left(\frac{V}{N}\right)" /></p>
 </div><p>This is used for the computation of equilibrium constants, and rate
 constants.</p>
 <dl class="docutils">
@@ -1198,13 +1198,13 @@ function e.g. [Vibrations(classical=True), ExtRot(1)]</div>
 <p>The term <cite>chemical models</cite> is used as a group name for thermodynamic models of
 chemical equilibria and kinetic models of chemical reactions.</p>
 <p class="graphviz">
-<img src="../images/inheritance-a211185f8f960ff64ee79a1ac39e0fdcbc3c521f.png" alt="Inheritance diagram of tamkin.chemmod" usemap="#inheritance0a8724f3ad" class="inheritance"/>
+<img src="../_images/inheritance-76a5da61a87730d70f70ed0e5626618369256432.png" alt="Inheritance diagram of tamkin.chemmod" usemap="#inheritance0a8724f3ad" class="inheritance"/>
 <map id="inheritance0a8724f3ad" name="inheritance0a8724f3ad">
-<area shape="rect" id="node1" href="#tamkin.chemmod.BaseModel" title="BaseModel" alt="" coords="140,6,231,34"/>
-<area shape="rect" id="node3" href="#tamkin.chemmod.BaseKineticModel" title="BaseKineticModel" alt="" coords="33,83,167,111"/>
-<area shape="rect" id="node8" href="#tamkin.chemmod.ThermodynamicModel" title="ThermodynamicModel" alt="" coords="191,83,353,111"/>
-<area shape="rect" id="node2" href="#tamkin.chemmod.KineticModel" title="KineticModel" alt="" coords="5,161,107,189"/>
+<area shape="rect" id="node1" href="#tamkin.chemmod.BaseKineticModel" title="BaseKineticModel" alt="" coords="33,83,167,111"/>
+<area shape="rect" id="node4" href="#tamkin.chemmod.KineticModel" title="KineticModel" alt="" coords="5,161,107,189"/>
 <area shape="rect" id="node6" href="#tamkin.chemmod.ActivationKineticModel" title="ActivationKineticModel" alt="" coords="131,161,296,189"/>
+<area shape="rect" id="node2" href="#tamkin.chemmod.BaseModel" title="BaseModel" alt="" coords="140,6,231,34"/>
+<area shape="rect" id="node8" href="#tamkin.chemmod.ThermodynamicModel" title="ThermodynamicModel" alt="" coords="191,83,353,111"/>
 </map>
 </p>
 <dl class="class">
@@ -2273,7 +2273,7 @@ with only one imaginary frequency.</p>
                         title="next chapter">4. Auxiliary modules</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="../sources/reference/pf.txt"
+    <li><a href="../_sources/reference/pf.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">
