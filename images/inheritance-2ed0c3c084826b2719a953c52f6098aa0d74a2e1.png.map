@@ -1,0 +1,17 @@
+<map id="inheritance98b00c76fa" name="inheritance98b00c76fa">
+<area shape="rect" id="node1" href="#tamkin.nma.MBHConstrainExt" title="MBHConstrainExt" alt="" coords="5,161,139,189"/>
+<area shape="rect" id="node2" href="#tamkin.nma.MBH" title="MBH" alt="" coords="5,83,77,111"/>
+<area shape="rect" id="node18" href="#tamkin.nma.PHVA_MBH" title="PHVA_MBH" alt="" coords="163,161,256,189"/>
+<area shape="rect" id="node4" href="#tamkin.nma.Constrain" title="Constrain" alt="" coords="101,83,184,111"/>
+<area shape="rect" id="node5" href="#tamkin.nma.Treatment" title="Treatment" alt="" coords="117,6,203,34"/>
+<area shape="rect" id="node7" href="#tamkin.nma.Full" title="Full" alt="" coords="208,83,280,111"/>
+<area shape="rect" id="node9" href="#tamkin.nma.VSA" title="VSA" alt="" coords="304,83,376,111"/>
+<area shape="rect" id="node13" href="#tamkin.nma.ConstrainExt" title="ConstrainExt" alt="" coords="400,83,501,111"/>
+<area shape="rect" id="node15" href="#tamkin.nma.VSANoMass" title="VSANoMass" alt="" coords="525,83,624,111"/>
+<area shape="rect" id="node21" href="#tamkin.nma.PHVA" title="PHVA" alt="" coords="648,83,720,111"/>
+<area shape="rect" id="node12" href="#tamkin.nma.NMA" title="NMA" alt="" coords="227,6,299,34"/>
+<area shape="rect" id="node17" href="#tamkin.nma.Transform" title="Transform" alt="" coords="323,6,408,34"/>
+<area shape="rect" id="node20" href="#tamkin.nma.AtomDivision" title="AtomDivision" alt="" coords="432,6,539,34"/>
+<area shape="rect" id="node23" href="#tamkin.nma.Blocks" title="Blocks" alt="" coords="563,6,635,34"/>
+<area shape="rect" id="node24" href="#tamkin.nma.MassMatrix" title="MassMatrix" alt="" coords="659,6,752,34"/>
+</map>
