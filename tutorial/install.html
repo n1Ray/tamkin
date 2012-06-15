@@ -7,7 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
     <title>1. Installation of TAMkin software &mdash; TAMkin v0.0 documentation</title>
-    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -85,31 +85,29 @@ distribution to install these dependencies.</p>
 <li>Python 2.5, 2.6 or 2.7 (including the header files): <a class="reference external" href="http://www.python.org/doc/">http://www.python.org/doc/</a></li>
 <li>Numpy 1.0 or later: <a class="reference external" href="http://numpy.scipy.org/">http://numpy.scipy.org/</a></li>
 <li>Scipy 0.6 or later: <a class="reference external" href="http://www.scipy.org/">http://www.scipy.org/</a></li>
-<li>A Fortran and a C compiler supported by the F2PY module in Numpy, e.g.
-gfortran and gcc: <a class="reference external" href="http://gcc.gnu.org/">http://gcc.gnu.org/</a></li>
 <li>Git: <a class="reference external" href="http://git-scm.com/">http://git-scm.com/</a></li>
 </ul>
 <p>Most Linux distributions can install this software with just a single command.
 They are listed below for several popular Linux distributions:</p>
 <ul>
 <li><p class="first">Ubuntu 12.4:</p>
-<div class="highlight-python"><pre>sudo apt-get install python python-dev python-numpy python-scipy gfortran gcc git-core</pre>
+<div class="highlight-python"><pre>sudo apt-get install python python-dev python-numpy python-scipy git-core</pre>
 </div>
 </li>
 <li><p class="first">Debian 5. You first have to become root because the sudo program is not
 configured by default.</p>
 <div class="highlight-python"><pre>su -
-apt-get install python python-dev python-numpy python-scipy gfortran gcc git-core
+apt-get install python python-dev python-numpy python-scipy git-core
 exit</pre>
 </div>
 </li>
 <li><p class="first">Fedora 17.:</p>
-<div class="highlight-python"><pre>sudo yum install python-devel numpy numpy-f2py scipy gcc-gfortran gcc git</pre>
+<div class="highlight-python"><pre>sudo yum install python-devel numpy numpy-f2py scipy git</pre>
 </div>
 </li>
 <li><p class="first">Suse 11.2:</p>
 <div class="highlight-python"><pre>sudo zypper ar http://download.opensuse.org/repositories/devel:/languages:/python/openSUSE_11.2/devel:languages:python.repo
-sudo zypper install python-devel python-numpy python-scipy gcc gcc-fortran git</pre>
+sudo zypper install python-devel python-numpy python-scipy git</pre>
 </div>
 </li>
 </ul>
@@ -162,33 +160,32 @@ that was originall used to install TAMkin):</p>
 <p>For the development and testing one needs to install one additional package:</p>
 <ul class="simple">
 <li>Nosetests &gt;= 0.11: <a class="reference external" href="http://somethingaboutorange.com/mrl/projects/nose/0.11.2/">http://somethingaboutorange.com/mrl/projects/nose/0.11.2/</a></li>
+<li>Sphinx &gt;= 1.0: <a class="reference external" href="http://sphinx.pocoo.org/">http://sphinx.pocoo.org/</a></li>
 </ul>
-<p>Most Linux distributions can install this software with just a single command on
-the command line by the administrator.</p>
+<p>Most Linux distributions can install this software with just a single terminal command:</p>
 <ul>
-<li><p class="first">Ubuntu 10.4:</p>
-<div class="highlight-python"><pre>sudo apt-get install python-nose</pre>
+<li><p class="first">Ubuntu 12.4:</p>
+<div class="highlight-python"><pre>sudo apt-get install python-nose python-sphinx</pre>
 </div>
 </li>
 <li><p class="first">Debian 5:</p>
 <div class="highlight-python"><pre>su -
-apt-get install python-nose
+apt-get install python-nose python-sphinx
 exit</pre>
 </div>
 </li>
 <li><p class="first">Fedora 17:</p>
-<div class="highlight-python"><pre>sudo yum install python-nose</pre>
+<div class="highlight-python"><pre>sudo yum install python-nose sphinx</pre>
 </div>
 </li>
 <li><p class="first">Suse 11.2:</p>
-<div class="highlight-python"><pre>sudo zypper install python-nose</pre>
+<div class="highlight-python"><pre>sudo zypper install python-nose sphinx</pre>
 </div>
 </li>
 </ul>
 <p>Once these dependecies are installed, execute the following commands to run the
 tests:</p>
-<div class="highlight-python"><pre>cd ~/build/
-cd tamkin
+<div class="highlight-python"><pre>cd ~/build/tamkin
 nosetests -v</pre>
 </div>
 <p>If some tests fail, post the output of the tests on the <a class="reference external" href="https://groups.google.com/forum/#!forum/tamkin">TAMkin
@@ -202,6 +199,9 @@ mailing list</a>.</p>
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo.png" alt="Logo"/>
+            </a></p>
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference external" href="#">1. Installation of TAMkin software</a><ul>
